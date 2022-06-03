@@ -8,7 +8,6 @@ server.use(express.static('public'));
 server.get('/', (_req, res) => {
   res.send('Hello Express!');
 });
-
 server.get('/fetch-wordpress-graphql', async (_req, res) => {
   const query = `
     query QueryPosts {
