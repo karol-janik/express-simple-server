@@ -9,7 +9,7 @@ server.get('/', (_req, res) => {
   res.send('Hello Expresshhhh!');
 });
 
-server.get('/fetch-wordpress-graphql', async (_req, res) => {
+//server.get('/fetch-wordpress-graphql', async (_req, res) => {
   const query = `
     query QueryPosts {
       posts {
