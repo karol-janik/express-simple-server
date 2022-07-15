@@ -3,7 +3,7 @@ const express = require('express');
 const server = express();
 const PORT = process.env.PORT || 3300;
 
-//server.use(express.static('public'));
+server.use(express.static('public'));
 
 server.get('/', (_req, res) => {
   res.send('Hello Expresshhhh!');
